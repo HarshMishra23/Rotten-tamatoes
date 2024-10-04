@@ -9,11 +9,18 @@
   <body>
     <form id="regsiterForm">
       <h3>Register</h3>
-      <div>
-        <label>Username:</label><br />
+      <div id="usernameContainer">
+        <label>Username: <span id="usercount">0</span></label><br />
         <input placeholder="Username" id="username" />
+        <p id="usernameError"></p>
       </div>
+      <div id="passwordContainer">
+        <label>Password: <span id="passcount">0</span></label><br/>
+        <input placeholder="Password" id="Password">
+        <p id="passwordError"></p>
+      </div>
+      <button type="submit">Submit</button>
     </form>
-    <script defer src="./regsiter.js"></script>
+    <script defer src="./register.js"></script>
   </body>
 </html>
